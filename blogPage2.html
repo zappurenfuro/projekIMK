@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Page</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .option-container {
+        position: relative;
+        display: inline-block;
+        width: 300px;
+        height: 200px;
+      }
+
+      .option-text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+      }
+
+      .option-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      body {
+        background-color: #f0f2f5;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .header a {
+        color: #333;
+        text-decoration: none;
+      }
+
+      .header .nav-link {
+        margin-left: 20px;
+      }
+
+      .main {
+        background-color: #fff;
+        border-radius: 4px;
+        padding: 20px;
+        margin-top: 20px;
+      }
+
+      .main h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+
+      .main p {
+        font-size: 16px;
+        line-height: 1.5;
+      }
+
+      .timeline {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .timeline-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+      }
+
+      .timeline-item .dot {
+        width: 12px;
+        height: 12px;
+        background-color: #0069d9;
+        border-radius: 50%;
+      }
+
+      .timeline-item .content {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .timeline-item .content .time {
+        color: #666;
+        font-size: 14px;
+      }
+
+      .timeline-item .content .text {
+        color: #333;
+        font-size: 16px;
+        line-height: 1.5;
+      }
+
+      .timeline-item .content .media {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .footer {
+        background-color: #f0f2f5;
+        padding: 20px;
+        margin-top: 20px;
+        text-align: center;
+      }
+
+      .footer p {
+        margin: 0;
+      }
+      .feature-box {
+        background-color: #f0f2f5;
+        padding: 20px;
+        width: 200px;
+      }
+
+      .feature-box .feature-title {
+        color: #666;
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+
+      .feature-box .feature-links {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .feature-box .feature-links li {
+        margin-bottom: 5px;
+      }
+
+      .feature-box .feature-links a {
+        color: #333;
+        text-decoration: none;
+      }
+
+      .feature-box .feature-links a:hover {
+        text-decoration: underline;
+      }
+      .uploader-name {
+        color: #999;
+        font-size: 14px;
+        margin-bottom: 5px;
+      }
+      .page-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh; /* Set the height of the container to 100% of the viewport height */
+      }
+
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        position: relative;
+      }
+
+      .header .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .header .option-container {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        position: absolute;
+        right: 0;
+      }
+
+      .box-of-choice {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+        position: relative;
+      }
+
+      .box-of-choice .option-text {
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .box-of-choice .option-image {
+        height: 150px;
+        object-fit: cover;
+      }
+
+      .box-of-choice .image-text {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        font-size: 24px;
+        font-weight: bold;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+      .blog-content {
+        margin-bottom: 30px;
+        margin-left: 10px;
+      }
+      .blog-content img {
+        display: block;
+        margin: 20px auto;
+      }
+      .user-name {
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        background-color: blanchedalmond;
+        position: relative;
+        border-style: inset;
+        text-decoration: none;
+        margin-top: 0px;
+      }
+      .author-image {
+        border: 2px solid #000; /* replace #000 with your desired border color */
+      }
+
+      .author-info {
+        border: 2px solid #000; /* replace #000 with your desired border color */
+      }
+      .blog-content p {
+        margin: 5px;
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <a href="#"
+        ><img
+          src="2Tour_Logo-removebg-preview.png"
+          alt=" Logo"
+          style="height: 70px"
+      /></a>
+      <div class="nav-links">
+        <a href="beranda.html" class="nav-link">Home</a>
+        <a href="tentangKami.html" class="nav-link">About</a>
+        <a href="panduanAplikasi.html" class="nav-link">Help</a>
+      </div>
+    </div>
+
+    <a href="otherUserProfile2.html" target="_blank">
+      <div class="user-name">
+        <img
+          src="WhatsApp_Image_2023-11-18_at_11.52.08_111e69e0-removebg-preview.png"
+          alt=""
+          width="40"
+          style="border-radius: 50%"
+        />
+        <br />
+        Gisella Karina
+      </div>
+    </a>
+    <!-- Add this line -->
+
+    <div class="blog-content">
+      <h2>Seattle</h2>
+      <img
+        src="seattle-washington-wallpaper-preview.jpg"
+        alt="Blog Picture"
+        style="width: 500px"
+      />
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio eum
+        distinctio sunt deleniti eveniet iusto quia dolore, accusamus commodi
+        accusantium culpa est quibusdam mollitia corrupti doloremque architecto,
+        nihil molestias minus.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis
+        inventore temporibus ullam commodi voluptas sequi, voluptatem quam
+        adipisci, exercitationem rem expedita excepturi ipsam amet sapiente
+        consequatur aperiam accusamus architecto. Obcaecati!
+      </p>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis
+        inventore temporibus ullam commodi voluptas sequi, voluptatem quam
+        adipisci, exercitationem rem expedita excepturi ipsam amet sapiente
+        consequatur aperiam accusamus architecto. Obcaecati! Lorem ipsum dolor
+        sit amet consectetur adipisicing elit. Repellat illum qui eaque,
+        laboriosam quidem impedit sequi. Et error nobis molestias, fugiat
+        voluptates voluptas illum ipsum, harum architecto atque, nesciunt optio.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo unde
+        laudantium sapiente vitae inventore magnam dolorum consequuntur ab iure
+        aliquid repellat neque ducimus perspiciatis accusantium doloremque, ut
+        quibusdam excepturi qui?
+      </p>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis
+        inventore temporibus ullam commodi voluptas sequi, voluptatem quam
+        adipisci, exercitationem rem expedita excepturi ipsam amet sapiente
+        consequatur aperiam accusamus architecto. Obcaecati! Lorem ipsum dolor
+        sit amet consectetur adipisicing elit. Repellat illum qui eaque,
+        laboriosam quidem impedit sequi. Et error nobis molestias, fugiat
+        voluptates voluptas illum ipsum, harum architecto atque, nesciunt optio.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo unde
+        laudantium sapiente vitae inventore magnam dolorum consequuntur ab iure
+        aliquid repellat neque ducimus perspiciatis accusantium doloremque, ut
+        quibusdam excepturi qui?
+      </p>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis
+        inventore temporibus ullam commodi voluptas sequi, voluptatem quam
+        adipisci, exercitationem rem expedita excepturi ipsam amet sapiente
+        consequatur aperiam accusamus architecto. Obcaecati! Lorem ipsum dolor
+        sit amet consectetur adipisicing elit. Repellat illum qui eaque,
+        laboriosam quidem impedit sequi. Et error nobis molestias, fugiat
+        voluptates voluptas illum ipsum, harum architecto atque, nesciunt optio.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo unde
+        laudantium sapiente vitae inventore magnam dolorum consequuntur ab iure
+        aliquid repellat neque ducimus perspiciatis accusantium doloremque, ut
+        quibusdam excepturi qui?
+      </p>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis
+        inventore temporibus ullam commodi voluptas sequi, voluptatem quam
+        adipisci, exercitationem rem expedita excepturi ipsam amet sapiente
+        consequatur aperiam accusamus architecto. Obcaecati! Lorem ipsum dolor
+        sit amet consectetur adipisicing elit. Repellat illum qui eaque,
+        laboriosam quidem impedit sequi. Et error nobis molestias, fugiat
+        voluptates voluptas illum ipsum, harum architecto atque, nesciunt optio.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo unde
+        laudantium sapiente vitae inventore magnam dolorum consequuntur ab iure
+        aliquid repellat neque ducimus perspiciatis accusantium doloremque, ut
+        quibusdam excepturi qui?
+      </p>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis
+        inventore temporibus ullam commodi voluptas sequi, voluptatem quam
+        adipisci, exercitationem rem expedita excepturi ipsam amet sapiente
+        consequatur aperiam accusamus architecto. Obcaecati! Lorem ipsum dolor
+        sit amet consectetur adipisicing elit. Repellat illum qui eaque,
+        laboriosam quidem impedit sequi. Et error nobis molestias, fugiat
+        voluptates voluptas illum ipsum, harum architecto atque, nesciunt optio.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo unde
+        laudantium sapiente vitae inventore magnam dolorum consequuntur ab iure
+        aliquid repellat neque ducimus perspiciatis accusantium doloremque, ut
+        quibusdam excepturi qui?
+      </p>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis
+        inventore temporibus ullam commodi voluptas sequi, voluptatem quam
+        adipisci, exercitationem rem expedita excepturi ipsam amet sapiente
+        consequatur aperiam accusamus architecto. Obcaecati! Lorem ipsum dolor
+        sit amet consectetur adipisicing elit. Repellat illum qui eaque,
+        laboriosam quidem impedit sequi. Et error nobis molestias, fugiat
+        voluptates voluptas illum ipsum, harum architecto atque, nesciunt optio.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo unde
+        laudantium sapiente vitae inventore magnam dolorum consequuntur ab iure
+        aliquid repellat neque ducimus perspiciatis accusantium doloremque, ut
+        quibusdam excepturi qui?
+      </p>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis
+        inventore temporibus ullam commodi voluptas sequi, voluptatem quam
+        adipisci, exercitationem rem expedita excepturi ipsam amet sapiente
+        consequatur aperiam accusamus architecto. Obcaecati! Lorem ipsum dolor
+        sit amet consectetur adipisicing elit. Repellat illum qui eaque,
+        laboriosam quidem impedit sequi. Et error nobis molestias, fugiat
+        voluptates voluptas illum ipsum, harum architecto atque, nesciunt optio.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo unde
+        laudantium sapiente vitae inventore magnam dolorum consequuntur ab iure
+        aliquid repellat neque ducimus perspiciatis accusantium doloremque, ut
+        quibusdam excepturi qui?
+      </p>
+    </div>
+    <!-- Add this line -->
+  </body>
+</html>

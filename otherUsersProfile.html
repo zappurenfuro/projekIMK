@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Profile</title>
+  </head>
+
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+    .header a {
+      color: #333;
+      text-decoration: none;
+    }
+
+    .header .nav-link {
+      margin-left: 20px;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      position: relative;
+      background-color: blanchedalmond;
+    }
+
+    .header .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .header .option-container {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      position: absolute;
+      right: 0;
+    }
+    .custom-row {
+      display: flex;
+      justify-content: center;
+    }
+
+    .feed-image-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .caption {
+      text-align: center;
+    }
+
+    .upload-time {
+      color: #6c757d;
+      text-align: center;
+      margin-bottom: 0.5rem;
+      font-size: x-small;
+    }
+  </style>
+  <body>
+    <div class="header">
+      <a href="#"
+        ><img
+          src="2Tour_Logo-removebg-preview.png"
+          alt=" Logo"
+          style="height: 70px"
+      /></a>
+      <div class="nav-links">
+        <a href="beranda.html" class="nav-link">Home</a>
+        <a href="#" class="nav-link">About</a>
+        <a href="#" class="nav-link">Contact</a>
+      </div>
+    </div>
+    <hr />
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <img
+            src="lois-griffin.jpg"
+            alt="Profile Picture"
+            class="img-thumbnail"
+            width="100"
+          />
+        </div>
+        <div class="col-md-9">
+          <h3>Lois Griffin</h3>
+          <br />
+          <h4>Email :</h4>
+          <span style="border: solid black">lois.griffin@example.com</span>
+          <hr />
+
+          <p class="upload-time">Uploaded: 2023-05-03 07:03:08</p>
+          <div class="row custom-row">
+            <div class="col-md-4">
+              <div class="feed-image-container">
+                <img
+                  src="20230503_070308.jpg"
+                  alt="Feed Image"
+                  class="img-thumbnail"
+                  width="500"
+                />
+                <p class="caption">
+                  Capturing the magic as Taylor Swift turns the stage into a
+                  realm of music and dreams.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <hr />
+
+          <p class="upload-time">Uploaded: 2023-05-03 07:03:08</p>
+          <div class="row custom-row">
+            <div class="col-md-4">
+              <div class="feed-image-container">
+                <img
+                  src="20230314_140101.jpg"
+                  alt="Feed Image"
+                  class="img-thumbnail"
+                  width="500"
+                />
+                <p class="caption">
+                  Chasing tracks and capturing the rhythmic heartbeat of the
+                  journey. 🚂 #OnTheRightTrack
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+
+        <p class="upload-time">Uploaded: 2023-05-03 07:03:08</p>
+        <div class="row custom-row">
+          <div class="col-md-4">
+            <div class="feed-image-container">
+              <img
+                src="seattle-washington-wallpaper-preview.jpg"
+                alt="Feed Image"
+                class="img-thumbnail"
+                width="500"
+              />
+              <p class="caption">
+                "Seattle's skyline, where urban elegance meets natural grace. A
+                panoramic symphony of city lights and Puget Sound views. 🏙️✨
+                #SeattleSerenity"
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

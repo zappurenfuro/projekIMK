@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forum Tanya-Jawab</title>
+  </head>
+  <style>
+    body {
+      background-color: #f0f2f5;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5px;
+      background-image: url(5bd3882fae229-wallpaper-preview.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 20px;
+      margin: 20px;
+    }
+
+    .header a {
+      color: white;
+      text-decoration: none;
+      margin-right: 20px;
+    }
+
+    .header .nav-link {
+      margin-left: 20px;
+    }
+
+    .main {
+      background-color: #fff;
+      border-radius: 4px;
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+    .main h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .main h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .main p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    .main ul {
+      padding-left: 20px;
+    }
+
+    .main li {
+      margin-bottom: 10px;
+    }
+
+    .footer {
+      background-color: #f0f2f5;
+      padding: 20px;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .footer p {
+      margin: 0;
+    }
+    .main a {
+      color: #333;
+      text-decoration: none;
+    }
+    h2 {
+      text-align: center;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    label {
+      margin-bottom: 5px;
+    }
+
+    input,
+    textarea {
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      border-radius: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      border-radius: 20px;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    .timeline {
+      list-style-type: none;
+      position: relative;
+      border-radius: 20px;
+    }
+
+    .timeline li {
+      margin-bottom: 50px;
+    }
+
+    .timestamp {
+      position: relative;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 5px 15px;
+      color: gray;
+    }
+
+    .timestamp .date {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .timeline-content {
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      background-color: white;
+      position: relative;
+      border-radius: 20px;
+    }
+
+    .timeline-content h2 {
+      margin-top: 0;
+    }
+  </style>
+
+  <body>
+    <div class="header">
+      <a href="#"
+        ><img
+          src="2Tour_Logo-removebg-preview.png"
+          alt=" Logo"
+          style="height: 100px"
+      /></a>
+      <div class="nav-links">
+        <a href="beranda.html" class="nav-link">Home</a>
+        <a href="tentangKami.html" class="nav-link">About</a>
+        <a href="panduanAplikasi.html" class="nav-link">Help</a>
+      </div>
+    </div>
+
+    <div class="container">
+      <h2>Forum Tanya-Jawab</h2>
+      <form id="submit-question-form">
+        <!-- Your form elements will go here -->
+      </form>
+    </div>
+
+    <form id="submit-question-form">
+      <label for="question-title">Question Title:</label>
+      <input type="text" id="question-title" name="question-title" required />
+      <br />
+      <label for="question-details">Question Details:</label>
+      <textarea
+        id="question-details"
+        name="question-details"
+        required
+      ></textarea>
+      <br />
+      <button type="submit">Ask Question</button>
+    </form>
+
+    <ul class="timeline">
+      <li>
+        <div class="timestamp">
+          <span class="date">April 2021</span>
+          <span class="time">12:30</span>
+        </div>
+        <div class="timeline-content">
+          <h2>Kuliner di Malioboro</h2>
+          <p>Di Malioboro makanannya mahal - mahal nggak?</p>
+        </div>
+      </li>
+      <li>
+        <div class="timestamp">
+          <span class="date">3 Juni 2021</span>
+          <span class="time">14:30</span>
+        </div>
+        <div class="timeline-content">
+          <h2>Kuliner di Malioboro</h2>
+          <p>Variatif kak. Ada yang mahal, ada yang murah</p>
+        </div>
+      </li>
+      <li>
+        <div class="timestamp">
+          <span class="date">20 April 2021</span>
+          <span class="time">12:30</span>
+        </div>
+        <div class="timeline-content">
+          <h2>Kuliner di Malioboro</h2>
+          <p>Murah kok kak. Asal nyarinya yang agak jauh dikit</p>
+        </div>
+      </li>
+      <li>
+        <div class="timestamp">
+          <span class="date">18 September 2021</span>
+          <span class="time">14:21</span>
+        </div>
+        <div class="timeline-content">
+          <h2>Kuliner di Malioboro</h2>
+          <p>Mahal - mahal kak Harga turis.</p>
+        </div>
+      </li>
+
+      <li>
+        <div class="timestamp">
+          <span class="date">1 Februari 2018</span>
+          <span class="time">13:41</span>
+        </div>
+        <div class="timeline-content">
+          <h2>Tips untuk Wisatawan Baru</h2>
+          <p>
+            Bagi yang sudah berpengalaman, berikan tips kepada wisatawan baru.
+            Apa hal-hal yang perlu diperhatikan atau tempat yang wajib
+            dikunjungi?
+          </p>
+        </div>
+      </li>
+      <li>
+        <div class="timestamp">
+          <span class="date">April 2021</span>
+          <span class="time">14:30</span>
+        </div>
+        <div class="timeline-content">
+          <h2>Tips untuk Wisatawan Baru</h2>
+          <p>
+            Saya merekomendasikan merencanakan perjalanan sebaik mungkin, tetapi
+            juga fleksibel. Jangan terlalu kaku pada jadwal karena kadang-kadang
+            momen tak terduga justru menjadi yang paling berkesan.
+          </p>
+        </div>
+      </li>
+
+      <li>
+        <div class="timestamp">
+          <span class="date">April 2021</span>
+          <span class="time">14:30</span>
+        </div>
+        <div class="timeline-content">
+          <h2>Tips untuk Wisatawan Baru</h2>
+          <p>
+            Pastikan untuk selalu memperhatikan keamanan dan kesehatan Anda.
+            Bawa perlengkapan medis dasar, perhatikan kondisi cuaca, dan kenali
+            fasilitas medis di sekitar tempat tujuan.
+          </p>
+        </div>
+      </li>
+      <li>
+        <div class="timestamp">
+          <span class="date">April 2021</span>
+          <span class="time">14:30</span>
+        </div>
+        <div class="timeline-content">
+          <h2>Tips untuk Wisatawan Baru</h2>
+          <p>
+            Tentukan anggaran Anda dan coba untuk mematuhinya. Hindari
+            menghabiskan terlalu banyak uang di awal perjalanan sehingga Anda
+            dapat menikmati seluruh perjalanan tanpa stres keuangan.
+          </p>
+        </div>
+      </li>
+
+      <!-- Add more list items for each question and answer -->
+    </ul>
+  </body>
+</html>
